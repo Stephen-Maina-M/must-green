@@ -3,372 +3,123 @@
 <!-- Tells the browser that this document uses HTML5 -->
 
 <html lang="en">
-<!-- The <html> element contains the entire webpage.
-     lang="en" tells the browser that the page is written in English -->
+<!-- The webpage is written in English. -->
 
 <head>
-    <!-- The <head> contains information about the webpage.
-         This information is mostly not displayed on the page -->
 
     <meta charset="UTF-8">
-    <!-- Tells the browser how to read and display characters correctly -->
+    <!-- Allows the browser to correctly display characters. -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Helps the webpage fit properly on phones, tablets and computers -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <!-- Makes the webpage responsive on phones, tablets and computers. -->
 
-    <title>Join MUST Green</title>
-    <!-- Sets the name that appears on the browser tab -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Connects this page to your CSS file. -->
+
+    <title>JOIN MUST GREEN</title>
+    <!-- Title shown on the browser tab. -->
 
 </head>
 
+
 <body>
-<!-- The <body> contains all the content that visitors see on the webpage -->
 
+    <!-- ==================== HEADER ==================== -->
 
-    <!-- Creates the introductory section of the webpage -->
     <header>
 
-        <!-- Creates the main heading of the webpage -->
         <h1>JOIN MUST GREEN</h1>
 
-        <!-- Introduces MUST Green to visitors -->
         <p>
-            MUST Green is a student-led tree planting and environmental
-            conservation campaign dedicated to creating a greener,
-            healthier and more sustainable Meru University campus.
-        </p>
-
-        <!-- Gives visitors more information about joining -->
-        <p>
-            By joining MUST Green, students can participate in tree planting
-            activities, learn about different tree species, promote
-            environmental awareness and contribute to a campus where
+            MUST Green is a student-led tree planting campaign dedicated
+            to creating a greener, healthier and more sustainable Meru
+            University campus. By joining us, you can take part in tree
+            planting activities, learn about different tree species, help
+            protect our environment, and contribute to a campus where
             nature and university life grow together.
         </p>
 
     </header>
-    <!-- Ends the header -->
 
 
-    <!-- Creates the navigation menu -->
-    <nav>
+    <!-- ==================== MEMBERSHIP SECTION ==================== -->
 
-        <h2>Navigation</h2>
+    <section>
 
-        <!-- Navigation links -->
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
+        <h2>Become a Member</h2>
 
-            <li>
-                <a href="species.html">Tree Species</a>
-            </li>
+        <p>
+            Join MUST Green and contribute to promoting environmental
+            sustainability, conservation, and responsible environmental
+            practices within the university community.
+        </p>
 
-            <li>
-                <a href="events.html">Events</a>
-            </li>
 
-            <li>
-                <a href="impact.html">Impact</a>
-            </li>
+        <!-- ==================== MEMBERSHIP FORM ==================== -->
 
-            <li>
-                <a href="contact.html">Join MUST Green</a>
-            </li>
-        </ul>
+        <form action="https://formspree.io/f/mvkzkzjz"
+              method="POST">
 
-    </nav>
-    <!-- Ends the navigation menu -->
+            <!-- FULL NAME -->
 
+            <label for="fullname">Full Name:</label>
 
-    <!-- Creates the main content area of the webpage -->
-    <main>
+            <input type="text"
+                   id="fullname"
+                   name="fullname"
+                   placeholder="Enter your full name"
+                   required>
 
 
-        <!-- Creates the membership section -->
-        <section>
+            <!-- EMAIL -->
 
-            <h2>Become a Member</h2>
+            <label for="email">Email Address:</label>
 
-            <p>
-                Joining MUST Green gives students an opportunity to take
-                practical action towards environmental conservation.
-                Members can participate in tree planting, campus clean-up
-                activities, environmental awareness campaigns and other
-                sustainability initiatives.
-            </p>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="Enter your email address"
+                   required>
 
-            <p>
-                You do not need to be an environmental science student to
-                participate. Every student can contribute skills, ideas,
-                time and energy towards building a greener university.
-            </p>
 
-        </section>
-        <!-- Ends the membership section -->
+            <!-- COURSE -->
 
+            <label for="course">Course/Program:</label>
 
-        <!-- Creates a section showing ways students can participate -->
-        <section>
+            <input type="text"
+                   id="course"
+                   name="course"
+                   placeholder="Enter your course or program"
+                   required>
 
-            <h2>How You Can Get Involved</h2>
 
-            <ul>
-                <li>
-                    Participate in tree planting activities.
-                </li>
+            <!-- REASON FOR JOINING -->
 
-                <li>
-                    Help care for and protect young trees.
-                </li>
+            <label for="reason">
+                Why do you want to join MUST Green?
+            </label>
 
-                <li>
-                    Take part in campus clean-up activities.
-                </li>
-
-                <li>
-                    Learn and share information about different tree species.
-                </li>
-
-                <li>
-                    Promote environmental awareness among students.
-                </li>
-
-                <li>
-                    Suggest new ideas for improving the university environment.
-                </li>
-            </ul>
-
-        </section>
-        <!-- Ends the involvement section -->
+            <textarea id="reason"
+                      name="reason"
+                      rows="5"
+                      placeholder="Tell us why you want to join MUST Green"
+                      required></textarea>
 
 
-        <!-- Creates the membership registration section -->
-        <section>
+            <!-- SUBMIT BUTTON -->
 
-            <h2>Membership Registration</h2>
-
-            <p>
-                Complete the form below if you would like to become part of
-                the MUST Green environmental community.
-            </p>
-
-            <!-- Creates a form where students can provide their details -->
-            <form action="#" method="post">
-
-                <!-- Full name -->
-                <label for="fullname">Full Name:</label>
-                <input
-                    type="text"
-                    id="fullname"
-                    name="fullname"
-                    required
-                >
-
-                <!-- Email address -->
-                <label for="email">Email Address:</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                >
-
-                <!-- Course -->
-                <label for="course">Course/Programme:</label>
-                <input
-                    type="text"
-                    id="course"
-                    name="course"
-                    required
-                >
-
-                <!-- Year of study -->
-                <label for="year">Year of Study:</label>
-
-                <select id="year" name="year">
-                    <option value="year1">Year 1</option>
-                    <option value="year2">Year 2</option>
-                    <option value="year3">Year 3</option>
-                    <option value="year4">Year 4</option>
-                </select>
-
-                <!-- Environmental activity -->
-                <label for="interest">
-                    Which environmental activity interests you most?
-                </label>
-
-                <select id="interest" name="interest">
-                    <option value="tree-planting">
-                        Tree Planting
-                    </option>
-
-                    <option value="conservation">
-                        Environmental Conservation
-                    </option>
-
-                    <option value="clean-up">
-                        Campus Clean-Up
-                    </option>
-
-                    <option value="awareness">
-                        Environmental Awareness
-                    </option>
-                </select>
-
-                <!-- Reason for joining -->
-                <label for="reason">
-                    Why do you want to join MUST Green?
-                </label>
-
-                <textarea
-                    id="reason"
-                    name="reason"
-                    rows="5"
-                    cols="40"
-                ></textarea>
-
-                <!-- Submit button -->
-                <button type="submit">
-                    JOIN MUST GREEN
-                </button>
-
-            </form>
-            <!-- Ends the membership form -->
-
-        </section>
-        <!-- Ends the registration section -->
-
-
-        <!-- Creates a section explaining the membership experience -->
-        <section>
-
-            <h2>What Members Can Experience</h2>
-
-            <ol>
-                <li>
-                    Learn about environmental conservation and tree species.
-                </li>
-
-                <li>
-                    Participate in practical tree planting activities.
-                </li>
-
-                <li>
-                    Work together with other students on environmental projects.
-                </li>
-
-                <li>
-                    Develop teamwork, leadership and communication skills.
-                </li>
-
-                <li>
-                    Contribute to a cleaner and greener university environment.
-                </li>
-            </ol>
-
-        </section>
-        <!-- Ends the member experience section -->
-
-
-        <!-- Creates a contact information section -->
-        <section>
-
-            <h2>Contact MUST Green</h2>
-
-            <p>
-                Do you have an idea for an environmental activity, a question
-                about tree planting, or an interest in joining the campaign?
-                We would be happy to hear from you.
-            </p>
-
-            <p>
-                <strong>Location:</strong>
-                Meru University campus
-            </p>
-
-            <p>
-                <strong>Programme:</strong>
-                MUST Green Environmental Initiative
-            </p>
-
-            <p>
-                <strong>Email:</strong>
-                <a href="mailto:mbuthiamaina45@gmail.com">
-                    mbuthiamaina45@gmail.com
-                </a>
-            </p>
-
-            <p>
-                <strong>Availability:</strong>
-                Students can participate during organised environmental
-                activities and campus campaigns.
-            </p>
-
-        </section>
-        <!-- Ends the contact information section -->
-
-
-        <!-- Creates a frequently asked questions section -->
-        <section>
-
-            <h2>Frequently Asked Questions</h2>
-
-            <h3>Who can join MUST Green?</h3>
-
-            <p>
-                Any student who is interested in environmental conservation,
-                tree planting and creating a greener campus can participate.
-            </p>
-
-            <h3>Do I need previous environmental experience?</h3>
-
-            <p>
-                No. Students can learn through participation and teamwork.
-                The most important requirement is a willingness to contribute
-                positively to the environment.
-            </p>
-
-            <h3>What activities does MUST Green organise?</h3>
-
-            <p>
-                Activities may include tree planting, environmental awareness,
-                campus clean-ups, biodiversity conservation and educational
-                activities.
-            </p>
-
-        </section>
-        <!-- Ends the FAQ section -->
-
-
-        <!-- Creates a final call-to-action section -->
-        <section>
-
-            <h2>Be Part of the Change</h2>
-
-            <p>
-                A greener campus begins with individual action. Whether you
-                plant one tree, protect an existing tree, participate in a
-                clean-up or educate another student, your contribution matters.
-            </p>
-
-            <p>
-                <strong>
-                    Plant trees. Protect nature. Inspire others.
-                    Build a sustainable future.
-                </strong>
-            </p>
-
-        </section>
-        <!-- Ends the final call-to-action section -->
-
-
-    </main>
-    <!-- Ends the main content -->
-
-
-    <!-- Creates the footer of the webpage -->
+            <button type="submit">
+                JOIN MUST GREEN
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ==================== FOOTER ==================== -->
+
     <footer>
 
         <p>
@@ -376,16 +127,13 @@
         </p>
 
         <p>
-            Creating a greener and more sustainable Meru University.
+            Promoting sustainability. Protecting our environment.
         </p>
 
     </footer>
-    <!-- Ends the footer -->
 
 
 </body>
-<!-- Ends the body -->
 
 </html>
-<!-- Ends the entire HTML document -->
 
