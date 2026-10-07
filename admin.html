@@ -1,0 +1,288 @@
+```html
+<!DOCTYPE html>
+<!-- Tells the browser that this document uses HTML5 -->
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <!-- Allows the browser to display characters correctly -->
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <!-- Makes the page responsive on phones, tablets and computers -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Connects the admin page to the existing CSS -->
+
+    <title>MUST Green Admin</title>
+
+</head>
+
+
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+
+    <header>
+
+        <h1>MUST GREEN ADMIN</h1>
+
+        <p>
+            Manage membership applications and decide who
+            joins the MUST Green environmental campaign.
+        </p>
+
+    </header>
+
+
+    <!-- ==================== APPLICATIONS ==================== -->
+
+    <section>
+
+        <h2>Membership Applications</h2>
+
+
+        <!-- ==================== APPLICATION 1 ==================== -->
+
+        <div class="application">
+
+            <h3>Application 1</h3>
+
+            <p>
+                <strong>Name:</strong>
+                John Mwangi
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                john@example.com
+            </p>
+
+            <p>
+                <strong>Course:</strong>
+                Data Science
+            </p>
+
+            <p>
+                <strong>Reason for Joining:</strong>
+                I want to participate in tree planting
+                and environmental conservation activities.
+            </p>
+
+            <p>
+                <strong>Status:</strong>
+                <span id="status1">Pending</span>
+            </p>
+
+            <p>
+                <strong>Rejection Reason:</strong>
+                <span id="reason1">None</span>
+            </p>
+
+
+            <button type="button"
+                    onclick="approveApplication(1)">
+                APPROVE
+            </button>
+
+            <button type="button"
+                    onclick="rejectApplication(1)">
+                REJECT
+            </button>
+
+        </div>
+
+
+        <!-- ==================== APPLICATION 2 ==================== -->
+
+        <div class="application">
+
+            <h3>Application 2</h3>
+
+            <p>
+                <strong>Name:</strong>
+                Jane Wanjiku
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                jane@example.com
+            </p>
+
+            <p>
+                <strong>Course:</strong>
+                Computer Science
+            </p>
+
+            <p>
+                <strong>Reason for Joining:</strong>
+                I would like to help make the university
+                environment greener.
+            </p>
+
+            <p>
+                <strong>Status:</strong>
+                <span id="status2">Pending</span>
+            </p>
+
+            <p>
+                <strong>Rejection Reason:</strong>
+                <span id="reason2">None</span>
+            </p>
+
+
+            <button type="button"
+                    onclick="approveApplication(2)">
+                APPROVE
+            </button>
+
+            <button type="button"
+                    onclick="rejectApplication(2)">
+                REJECT
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+
+    <script>
+
+        /*
+        This function approves an application.
+        */
+
+        function approveApplication(number) {
+
+            document.getElementById("status" + number).textContent =
+                "APPROVED";
+
+            document.getElementById("reason" + number).textContent =
+                "None";
+
+            alert("Application approved successfully!");
+
+        }
+
+
+        /*
+        This function rejects an application.
+        It provides five reasons to choose from.
+        */
+
+        function rejectApplication(number) {
+
+            let reason = prompt(
+                "Select a reason for rejection:\n\n" +
+                "1. Incomplete application information\n" +
+                "2. Does not meet membership requirements\n" +
+                "3. Reason for joining is not satisfactory\n" +
+                "4. Duplicate application\n" +
+                "5. Other / Not eligible at this time\n\n" +
+                "Enter a number from 1 to 5:"
+            );
+
+
+            /*
+            These are the five available rejection reasons.
+            */
+
+            let rejectionReason = "";
+
+
+            if (reason === "1") {
+
+                rejectionReason =
+                    "Incomplete application information";
+
+            }
+
+            else if (reason === "2") {
+
+                rejectionReason =
+                    "Does not meet membership requirements";
+
+            }
+
+            else if (reason === "3") {
+
+                rejectionReason =
+                    "Reason for joining is not satisfactory";
+
+            }
+
+            else if (reason === "4") {
+
+                rejectionReason =
+                    "Duplicate application";
+
+            }
+
+            else if (reason === "5") {
+
+                rejectionReason =
+                    "Other / Not eligible at this time";
+
+            }
+
+            else {
+
+                alert(
+                    "Invalid choice. Please enter a number from 1 to 5."
+                );
+
+                return;
+
+            }
+
+
+            /*
+            Ask the administrator to confirm the rejection.
+            */
+
+            let confirmRejection = confirm(
+                "Are you sure you want to reject this application?\n\n" +
+                "Reason: " + rejectionReason
+            );
+
+
+            if (confirmRejection) {
+
+                document.getElementById("status" + number).textContent =
+                    "REJECTED";
+
+                document.getElementById("reason" + number).textContent =
+                    rejectionReason;
+
+                alert("Application rejected.");
+
+            }
+
+        }
+
+    </script>
+
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 MUST Green. All rights reserved.
+        </p>
+
+        <p>
+            Admin Panel - MUST Green
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
+```
