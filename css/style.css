@@ -1,0 +1,379 @@
+```css
+/* ================================
+   GENERAL SETTINGS
+   ================================ */
+
+/* Applies to all elements on the webpage */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Removes default spacing and makes element sizing easier to control */
+
+
+/* ================================
+   BODY
+   ================================ */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgreen;
+    color: black;
+}
+/* Sets the font, background colour, and text colour */
+
+
+/* ================================
+   HEADER
+   ================================ */
+
+header {
+    background-color: darkgreen;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/* Styles the header */
+/* padding adds space inside the header */
+
+
+/* ================================
+   NAVIGATION MENU
+   ================================ */
+
+/* nav selects the navigation section */
+nav {
+    padding: 15px;
+    /* Adds space inside the navigation area */
+
+    background-color: darkgreen;
+    /* Gives the navigation a dark green background */
+}
+
+
+/* Removes the default list styling */
+nav ul {
+    list-style-type: none;
+    /* Removes the bullet points */
+
+    text-align: center;
+    /* Centers the navigation links */
+}
+
+
+/* Places navigation items next to each other */
+nav ul li {
+    display: inline-block;
+    /* Displays navigation items horizontally */
+
+    margin: 5px;
+    /* Adds space between navigation items */
+}
+
+
+/* Navigation links */
+nav a {
+    margin: 10px;
+    /* Adds space around each link */
+
+    text-decoration: none;
+    /* Removes the underline from the links */
+
+    color: white;
+    /* Makes the link text white */
+}
+
+
+/* Changes the link when the mouse moves over it */
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================
+   MAIN HEADING
+   ================================ */
+
+h1 {
+    text-align: center;
+    /* Centers the main heading horizontally */
+
+    font-size: 32px;
+    /* Makes the main heading large and easy to notice */
+
+    margin: 20px;
+    /* Creates space around the heading */
+}
+
+
+/* ================================
+   PARAGRAPHS
+   ================================ */
+
+p {
+    font-size: 18px;
+    /* Makes paragraph text easier to read */
+
+    line-height: 1.6;
+    /* Creates comfortable space between lines */
+
+    margin: 15px;
+    /* Creates space around each paragraph */
+}
+
+
+/* ================================
+   SECTIONS
+   ================================ */
+
+section {
+    padding: 30px;
+    /* Creates 30px of space inside the section */
+
+    margin: 20px;
+    /* Creates 20px of space outside the section */
+
+    border: 1px solid black;
+    /* Adds a thin black border around the section */
+
+    border-radius: 10px;
+    /* Rounds the corners of the section */
+
+    background-color: white;
+    /* Gives the section a white background */
+}
+
+
+/* ================================
+   SECTION HEADINGS
+   ================================ */
+
+section h2 {
+    text-align: center;
+    /* Centers the section heading */
+
+    font-size: 26px;
+    /* Makes the section heading bigger */
+
+    margin-bottom: 15px;
+    /* Creates space below the section heading */
+}
+
+
+/* ================================
+   SUBHEADINGS
+   ================================ */
+
+h3 {
+    font-size: 22px;
+    /* Makes smaller headings larger than normal text */
+
+    margin: 15px;
+    /* Creates space around the subheading */
+}
+
+
+/* ================================
+   LISTS
+   ================================ */
+
+ul {
+    margin: 15px 30px;
+    /* Creates space around the list */
+
+    padding-left: 20px;
+    /* Creates space between the list and its bullet points */
+}
+
+
+li {
+    font-size: 17px;
+    /* Makes list items easy to read */
+
+    margin-bottom: 8px;
+    /* Creates space between individual list items */
+}
+
+
+/* ================================
+   LINKS
+   ================================ */
+
+a {
+    color: green;
+    /* Makes normal links green */
+
+    text-decoration: none;
+    /* Removes the normal underline from links */
+}
+
+
+a:hover {
+    text-decoration: underline;
+    /* Adds an underline when the mouse moves over a link */
+}
+
+
+/* ================================
+   FORMS
+   ================================ */
+
+form {
+    max-width: 600px;
+    /* Prevents the form from becoming too wide */
+
+    margin: 20px auto;
+    /* Centers the form */
+}
+
+
+/* Styles form labels */
+label {
+    display: block;
+    /* Places each label on its own line */
+
+    margin: 10px 0 5px;
+    /* Adds space around the label */
+
+    font-weight: bold;
+    /* Makes the label easier to see */
+}
+
+
+/* Styles text inputs, select boxes and text areas */
+input,
+select,
+textarea {
+    width: 100%;
+    /* Makes form fields use the available width */
+
+    padding: 10px;
+    /* Adds space inside the fields */
+
+    margin-bottom: 15px;
+    /* Adds space below each field */
+
+    border: 1px solid black;
+    /* Adds a border */
+
+    border-radius: 5px;
+    /* Rounds the corners */
+}
+
+
+/* ================================
+   BUTTONS
+   ================================ */
+
+button {
+    padding: 10px 20px;
+    /* Creates space inside the button */
+
+    font-size: 16px;
+    /* Makes the button text easy to read */
+
+    border: none;
+    /* Removes the default button border */
+
+    border-radius: 5px;
+    /* Makes the button corners slightly rounded */
+
+    cursor: pointer;
+    /* Changes the mouse pointer to a hand over the button */
+}
+
+
+/* ================================
+   IMAGES
+   ================================ */
+
+img {
+    max-width: 100%;
+    /* Prevents an image from becoming wider than its container */
+
+    height: auto;
+    /* Keeps the image's original proportions */
+
+    display: block;
+    /* Makes the image behave as its own block */
+
+    margin: 20px auto;
+    /* Adds space above and below the image and centers it */
+}
+
+
+/* ================================
+   VIDEOS
+   ================================ */
+
+video {
+    width: 100%;
+    /* Makes the video use the available width */
+
+    max-width: 800px;
+    /* Prevents the video from becoming too wide */
+
+    display: block;
+    /* Places the video on its own line */
+
+    margin: 20px auto;
+    /* Adds space around the video and centers it */
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+    text-align: center;
+    /* Centers the footer text */
+
+    padding: 20px;
+    /* Creates space inside the footer */
+
+    margin-top: 30px;
+    /* Creates space between the main content and footer */
+
+    background-color: green;
+    /* Gives the footer a green background */
+
+    color: white;
+    /* Makes the footer text white */
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+@media (max-width: 600px) {
+
+    /* Makes the main heading smaller on small screens */
+    h1 {
+        font-size: 26px;
+    }
+
+
+    /* Reduces section spacing on small screens */
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+
+    /* Places navigation links vertically on small screens */
+    nav ul li {
+        display: block;
+
+        margin: 10px 0;
+    }
+
+
+    /* Makes paragraphs slightly smaller on small screens */
+    p {
+        font-size: 16px;
+    }
+}
+
