@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<!-- Tells the browser that this document uses HTML5 -->
+
+<html lang="en">
+<!--The <html> element contains the entire webpage.
+	lang="en" tells the browser that page is english -->
+
+<head>
+     <!-- The <head> contains information about the webpage.
+     This information is mostly not displayed on the page -->
+       
+   <link rel="stylesheet" href="css/style.css">
+   <!-- This link tells the HTML pages tu use the CSS in style.css. -->
+
+     <meta charset="UTF-8">
+     <!--Tells the browser how to read and display characters correctly -->
+
+     <meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+     <!Helps the webpage fit properly on phones,tablets and computers -->
+    
+     <title>JOIN MUST GREEN</title>
+     <!-- Sets the name that appears on the browser tab -->
+
+</head>
+<!-- Ends the head section -->
+
+<body>
+   <!-- The <body> contains the content that visitors see on the webpage -->
+  <header>
+       <!-- <header> is the introductory/top section of the web page -->
+
+         <h1>JOIN MUST GREEN</h1>
+         <!-- <h1> is the main heding of this webpage -->
+         
+         <p>Must Green is a student-led tree planting campaign dedicated to creating a greener,healthier and more sustainable Meru University Campus
+            By joining us,you can take part in tree planting activities,learn about different trr species,help protect our environment, and contribute to
+            a campus where nature and university life grow together .</p>
+         <!-- <p> creates a paragraph of text -->
+
+         </header>
+         <!-- Ends the header section -->
+
+</body>
+<!-- Ends the visible content of the webpage -->
+
+</html>
+<!-- Ends the entire HTML document -->
+
+<section>
+<!-- Creates a seperate section of the webpage -->
+
+<h2>Become a member</h2>
+<!-- Creates the heading for this section -->
+
+  <p>Join Must Green and contribute to promoting enviromental sustainability,conservation, and responsible enviromental practices within the university community.</p>
+
+</section>
+<!-- Ends the membership section -->
+
+<form>
+<!-- Creates a form where students can provide their membership details -->
+
+<label for="fullname">Full Name:</label>
+<!--Creates a label that tells the user what information to enter -->   
+
+<input type="text" id="fullname"
+name="fullname">
+<!-- Creates a text box where the user can enter their full name
+
+	</form>  
+        <!-- Ends the membership form -->
+
+</section>
+<!-- Ends the membership section -->    
+
+<label for="Email Address:<label>
+<!-- Creates a label that tells the user to enter their email address -->
+
+<input type="email" id="email" name="email">
+<!-- Creates a field where the user can enter their email adress -->
+
+<label for="course">Course/program:</label>
+
+<input type="text" id="course" name="course">
+
+</form>
+
+<label for="reason">Why do you want to join Must Green?</label>
+
+<textarea id="reason" name="reason"></textarea>
+<!-- Creates a larger text area where the user can write their responce -->
+
+<button type="submit"> JOIN MUST GREEN</button>
+<!-- Creates a button that allows the user to submit the completed form -->
+
+</form>
+
+</section>
